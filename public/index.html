@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar tailwind</title>
+
+    <!-- font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
+
+        <!-- navbar Smartphone -->
+        <nav class="container border-b border-white/10 py-3  md:hidden">
+            <div class="flex justify-between items-center ">
+              <span class="uppercase font-semibold text-white">
+                AmmarBahtiar
+              </span>
+
+              <span class="text-3xl cursor-pointer block text-white">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+            </div>
+
+            <ul class="z-[1] absolute bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 w-full left-0  py-4 top-[-400px] transition-all ease-in duration-300 text-center">
+              <li class="mx-4 my-6 ">
+                <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Home</a>
+              </li>
+              <li class="mx-4 my-6">
+                <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">About</a>
+              </li>
+              <li class="mx-4 my-6">
+                <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Portfolio</a>
+              </li>
+              <li class="mx-4 my-6">
+                <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Contact</a>
+              </li>
+              <li class="mx-4 my-6">
+                <a href="#" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Instagram</a>
+                <a href="#" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Github</a>
+              </li>
+
+
+            <h2 class=""></h2>
+            </ul>
+          </nav>
+          <!-- end -->
+
+          <!-- nav desktop -->
+        <div class="hidden md:block border-b border-white/10 py-3">
+
+            <div class="container border-l border-gray-800">
+                <nav class="flex items-center justify-between">
+                    <div class="flex items-center gap-x-2">
+                        <a href="#" class="text-white font-semibold uppercase mr-6">AmmarBahtiar</a>
+                        <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Home</a>
+                        <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">About</a>
+                        <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Portfolio</a>
+                        <a href="#" class="md:text-sm font-medium lg:text-tiny px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <a href="#" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Instagram</a>
+                        <a href="#" class="px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-700/40 rounded-lg">Github</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Header -->
+        <div class="container border-l border-gray-800">
+            <div class="w-full md:w-2/3">
+                <header class="text-white py-4 sm:py-8 md:py-16">
+                    <h1 class="text-2xl md:text-3xl font-bold">Ahmad Ammar Bahtiar</h1>
+                    <p class="text-sm md:text-xl leading-relaxed font-light mt-4 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam harum nam necessitatibus. Sed, quas atque. Reprehenderit cum harum distinctio animi eos ducimus blanditiis. Architecto ducimus maiores iste libero magnam.</p>
+                    <a href="#" class="bg-white hover:bg-gray-50 hover:text-blue-600 transition duration-300 text-gray-900 px-4 py-2 text-sm md:text-tiny md:px-6 md:py-2.5 rounded-xl font-medium inline-flex shadow-inner shadow-gray-300 md:shadow-gray-400">Download CV</a>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social media -->
+    <div class="w-full h-52 bg-slate-100 mb-12">
+    <h1>Social Integration</h1>
+    <P>Dapatkan informasi dengan sangat cepat dari beberapa social media.</P>
+    </div>
+
+    <!-- portfolio -->
+    <div class="container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+            <div class="1">
+                <a href="">
+                    <img class="shadow hover:shadow-lg transition-shadow duration-300 rounded-xl mb-4 aspect[4/2.333] w-full object-cover object-center" src="img-portfolio/restoran.jpg" alt="picture">
+                </a>
+                <a href="#">
+                    <h1 class="mb-4 font-semibold text-black">Website Kasir Restoran</h1>
+                </a>
+                <div class="flex items-center font-mono justify-between text-sm to-gray-500">
+                    <span>AmmarBahtiar</span>
+                    <span>23 Januari 2022</span>
+                </div>
+            </div>
+            <div class="1">
+                <a href="">
+                    <img class="shadow hover:shadow-lg transition-shadow duration-300 rounded-xl mb-4 aspect[4/2.333] w-full object-cover object-center" src="img-portfolio/smpn4p.jpg" alt="picture">
+                </a>
+                <a href="#">
+                    <h1 class="mb-4 font-semibold text-black">Website SMP Negeri 4 Pamarican</h1>
+                </a>
+                <div class="flex items-center font-mono justify-between text-sm to-gray-500">
+                    <span>AmmarBahtiar</span>
+                    <span>23 Januari 2022</span>
+                </div>
+            </div>
+            <div class="1">
+                <a href="">
+                    <img class="shadow hover:shadow-lg transition-shadow duration-300 rounded-xl mb-4 aspect[4/2.333] w-full object-cover object-center" src="img-portfolio/yukngode.png" alt="picture">
+                </a>
+                <a href="#">
+                    <h1 class="mb-4 font-semibold text-black">Website YukNgode</h1>
+                </a>
+                <div class="flex items-center font-mono justify-between text-sm to-gray-500">
+                    <span>AmmarBahtiar</span>
+                    <span>23 Januari 2022</span>
+                </div>
+            </div>
+            <div class="1">
+                <a href="">
+                    <img class="shadow hover:shadow-lg transition-shadow duration-300 rounded-xl mb-4 aspect[4/2.333] w-full object-cover object-center" src="img-portfolio/neomorphism.png" alt="picture">
+                </a>
+                <a href="#">
+                    <h1 class="mb-4 font-semibold text-black">Website Portfolio Neomorphism</h1>
+                </a>
+                <div class="flex items-center font-mono justify-between text-sm to-gray-500">
+                    <span>AmmarBahtiar</span>
+                    <span>23 Januari 2022</span>
+                </div>
+            </div>
+            <div class="1">
+                <a href="">
+                    <img class="shadow hover:shadow-lg transition-shadow duration-300 rounded-xl mb-4 aspect[4/2.333] w-full object-cover object-center" src="img-portfolio/ari.png" alt="picture">
+                </a>
+                <a href="#">
+                    <h1 class="mb-4 font-semibold text-black">Ariana Grande - Positions (AmmarBahtiar & Clairuz Remix)</h1>
+                </a>
+                <div class="flex items-center font-mono justify-between text-sm to-gray-500">
+                    <span>AmmarBahtiar</span>
+                    <span>23 Januari 2022</span>
+                </div>
+            </div>
+            <div class="1">
+                <a href="">
+                    <img class="shadow hover:shadow-lg transition-shadow duration-300 rounded-xl mb-4 aspect[4/2.333] w-full object-cover object-center" src="img-portfolio/animatomusik.png" alt="picture">
+                </a>
+                <a href="#">
+                    <h1 class="mb-4 font-semibold text-black">Redesign Web Animato Music</h1>
+                </a>
+                <div class="flex items-center font-mono justify-between text-sm to-gray-500">
+                    <span>AmmarBahtiar</span>
+                    <span>23 Januari 2022</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-12 border-t border-gray-800 bg-gradient-to-br from-gray-900 via-gray-900 to-slate-800">
+        <div class="container border-l border-gray-800">
+            <div class="flex justify-center ">
+                <div class="max-w-lg w-full py-8 text-white">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, odio, voluptas, soluta dolor doloremque error neque cupiditate ratione voluptatibus voluptatem sunt unde hic labore cum reprehenderit nihil tempora deleniti provident!
+                </div>
+            </div>
+        </div>
+        <div class="py-4 text-center text-white border-t border-gray-800">
+            <div class="container border-l border-gray-800">&copy; Ammar Bahtiar 2022</div>
+        </div>
+    </footer>
+
+    <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[60px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[60px]'),list.classList.remove('opacity-100'))
+        }
+      </script>
+</body>
+
+</html>
